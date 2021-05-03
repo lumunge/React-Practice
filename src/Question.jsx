@@ -24,8 +24,14 @@ export default function Question({title, answer}) {
                 style={h4Style} 
                 onClick={showAnswer}>{title} 
                 {show ? 
-                    <i style={{position:"relative", float:"right", paddingRight:"1rem"}} className="fa fa-chevron-down" aria-hidden="true"></i> 
-                :   <i style={{position:"relative", float:"right", paddingRight:"1rem"}} className="fa fa-chevron-up" aria-hidden="true"></i>
+                    <i 
+                        style={{position:"relative", float:"right", paddingRight:"1rem"}} 
+                        className="fa fa-chevron-down" aria-hidden="true">
+                    </i> 
+                :   <i 
+                        style={{position:"relative", float:"right", paddingRight:"1rem"}} 
+                        className="fa fa-chevron-up" aria-hidden="true">
+                    </i>
                 }
             </h4>
             </header>
