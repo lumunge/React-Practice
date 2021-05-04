@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div style={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}} className="App">
-      <h1>Accordion With React JS</h1>
+      <h1 style={{color:"#000"}}>Accordion With React JS</h1>
       <div style={accordionStyle} className="accordion">
         {questions.map((question) => (
           <Question 
