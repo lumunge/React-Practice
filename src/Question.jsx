@@ -10,16 +10,19 @@ export default function Question({title, answer}) {
 
     const articleStyle = {
         border: "1px solid #333",
-        margin: "1rem"
+        margin: "1rem",
+        borderRadius: "10px",
+        background:"  #273746  ",
+        color: "#fff"
     }
 
     const h4Style = {
-        cursor: "pointer"
+        cursor: "pointer",
+        color: " #2ecc71 "
     }
 
     return (
         <article style={articleStyle}>
-            <header>
             <h4 
                 style={h4Style} 
                 onClick={showAnswer}>{title} 
@@ -34,9 +37,8 @@ export default function Question({title, answer}) {
                     </i>
                 }
             </h4>
-            </header>
             {show && 
-            <p>{answer}</p>
+            <p style={{padding:"10px"}}>{answer}</p>
             }
         </article>
     )
