@@ -24,7 +24,7 @@ export default function Menu() {
 
     return (
         <div>
-            <h1>On the Menu</h1>
+            <h1>On the Menu Today</h1>
             <div className="filter-btns">
                 <Categories
                     categories={categories}
