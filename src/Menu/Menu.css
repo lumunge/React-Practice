@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+}
+.tabs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabs > button{
+    margin-right: 10px;
+}
+.menu-image img{
+    width: 100px;
+    height: 100px;
+}
+.menu-container{
+    display: flex;
+}
