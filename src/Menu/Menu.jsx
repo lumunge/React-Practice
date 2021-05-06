@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import data from './menuData';
 import './Menu.css';
 import MenuItem from './MenuItem';
@@ -23,7 +24,7 @@ export default function Menu() {
     }
 
     return (
-        <div>
+        <div className="container">
             <h1>On the Menu Today</h1>
             <div className="filter-btns">
                 <Categories
@@ -31,8 +32,9 @@ export default function Menu() {
                     filterItems={filterItems}
                 />
             </div>
-            <div className="menu">
+            <div className="row">
                 {menuItems.map((item) => (
+                    <div className="col-md-6">
                     <MenuItem
                         key={item.id}
                         image={item.image}
@@ -40,6 +42,7 @@ export default function Menu() {
                         description={item.description}
                         price={item.price}
                     />
+                    </div>
                 ))}
                 </div>
         </div>

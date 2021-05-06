@@ -1,18 +1,53 @@
+body{
+    background-color: #0f1923;
+}
+.menuApp{
+    width: 100%;
+    overflow: hidden;
+}
+.category{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.filter-btn{
+    margin-right: 1rem;
+    text-transform: capitalize;
+    font-weight: bolder;
+    background: transparent;
+    color: #58d68d;
+    border: 1px solid #d0d3d4;
+    padding: 7px 20px;
+}
+.filter-btn:hover{
+    flex-grow: 0.1;
+    color: #fff;
+    background-color: #58d68d;
+    transition: all .4s ease-in-out;
+}
 h1{
     text-align: center;
+    color:  #d0d3d4;
 }
-.tabs{
+.menu-image img{
+    width: 250px;
+    height: 250px;
+}
+.menu-item{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid#f4d03f;
+    margin: 2rem 0;
+    height: 250px;
 }
-.tabs > button{
-    margin-right: 10px;
+.title,
+.desc{
+    padding: 1rem;
+    color:  #d0d3d4;
 }
-.menu-image img{
-    width: 100px;
-    height: 100px;
-}
-.menu-container{
-    display: flex;
+.price{
+    position: relative;
+    float: inline-end;
+    color:  #58d68d;
 }
