@@ -18,7 +18,8 @@ export default function Question({title, answer}) {
 
     const h4Style = {
         cursor: "pointer",
-        color: " #2ecc71 "
+        color: " #2ecc71 ",
+        padding: "1rem 0"
     }
 
     return (
