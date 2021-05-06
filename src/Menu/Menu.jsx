@@ -24,7 +24,7 @@ export default function Menu() {
     }
 
     return (
-        <div className="container">
+        <div className="container menu-container">
             <h1>On the Menu Today</h1>
             <div className="filter-btns">
                 <Categories

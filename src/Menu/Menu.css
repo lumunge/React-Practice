@@ -1,9 +1,5 @@
-body{
-    background-color: #0f1923;
-}
-.menuApp{
-    width: 100%;
-    overflow: hidden;
+.menu-container{
+    /* background-color: #0f1923; */
 }
 .category{
     display: flex;
@@ -15,8 +11,7 @@ body{
     text-transform: capitalize;
     font-weight: bolder;
     background: transparent;
-    color: #58d68d;
-    border: 1px solid #d0d3d4;
+    border: 1px solid #f4d03f;
     padding: 7px 20px;
 }
 .filter-btn:hover{
@@ -24,20 +19,21 @@ body{
     color: #fff;
     background-color: #58d68d;
     transition: all .4s ease-in-out;
+    border: none;
 }
 h1{
     text-align: center;
-    color:  #d0d3d4;
 }
 .menu-image img{
     width: 250px;
     height: 250px;
 }
 .menu-item{
+    background-color: #0f1923;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid#f4d03f;
+    border: 2px solid#f4d03f;
     margin: 2rem 0;
     height: 250px;
 }
