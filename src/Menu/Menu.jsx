@@ -4,6 +4,7 @@ import data from './menuData';
 import './Menu.css';
 import MenuItem from './MenuItem';
 import Categories from './Categories';
+import Navbar from '../Navbar/Navbar';
 
 
 
@@ -24,6 +25,8 @@ export default function Menu() {
     }
 
     return (
+        <>
+        <Navbar/>
         <div className="container menu-container">
             <h1>On the Menu Today</h1>
             <div className="filter-btns">
@@ -46,5 +49,6 @@ export default function Menu() {
                 ))}
                 </div>
         </div>
+        </>
     )
 }

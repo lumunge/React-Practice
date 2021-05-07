@@ -1,28 +1,23 @@
 import React from 'react';
+import './Navbar.css';
 import {Link} from 'react-router-dom';
+import { navLinks } from './navData';
 
 export default function Navbar() {
     return (
         <nav>
-            <div className="nav-center">
                 <div className="nav-header">
-                    <h4>Logo Here</h4>
-                    <button className="nav-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                    <h4>React Practice Projects</h4>
                 </div>
                 <div className="links-container show-container">
                     <ul className="nav-links">
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/menu">Food Menu</Link>
-                        </li>
-                        <li>
-                            <Link to="/accordion">Accordion</Link>
-                        </li>
+                        {navLinks.map((navLink, index) => (
+                            <li>
+                                <Link className="link" to={navLink.url}>{navLink.text}</Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
-            </div>
         </nav>
     )
 }

@@ -1,0 +1,27 @@
+nav{
+    background: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+h4{
+    color: #fff;
+}
+.nav-links{
+    display: flex;
+}
+.nav-links li{
+    list-style: none;
+    padding-right: 2rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.nav-links li .link{
+    color: #fff;
+}
+.nav-links li .link:hover{
+    text-decoration: none;
+    cursor: pointer;
+    flex-grow: 1;
+}
