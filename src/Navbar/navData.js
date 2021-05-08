@@ -13,5 +13,10 @@ export const navLinks = [
         id: 3,
         url: '/accordion',
         text: 'accordion'
+    },
+    {
+        id: 4,
+        url: '/todo',
+        text: 'todo-list'
     }
 ]
