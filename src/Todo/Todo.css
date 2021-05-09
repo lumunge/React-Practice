@@ -1,0 +1,61 @@
+.todo {
+  width: 700px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  margin-top: 5%;
+  border-radius: 20px;
+  box-shadow: 12px 12px 2px 1px #b2babb;
+  padding: 2rem;
+}
+.todo h4{
+    text-align: center;
+}
+
+.todo-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-item{
+    border-bottom: 1px solid #000;
+    width: 60%;
+}
+.todo-list{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    width: 500px;
+}
+.submit{
+    margin-left: 1.2rem;
+    border: 1px solid #000;
+    padding: 5px 20px;
+}
+.clear-btn{
+    text-align: center;
+}
+.clear-btn button{
+    background: transparent;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    font-size: 1.2rem;
+}
+.submit:hover,
+.clear-btn button:hover{
+    background: #b2babb;
+    color: #000;
+    transition: all .4s ease-in-out;
+}
+.action-btns{
+    position: relative;
+    float: right;
+    margin: 0 1rem;
+}
+.action-btns, button{
+    margin: 0 1rem;
+    border: none;
+    background: transparent;
+}

@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import './Todo.css';
 import List from './List';
 import Alert from './Alert';
 import Navbar from '../Navbar/Navbar';
@@ -12,7 +13,6 @@ const getLoaclStorage = () => {
         return [];
     }
 }
-
 
 export default function Todo() {
 
@@ -75,23 +75,27 @@ export default function Todo() {
         <>
         <Navbar/>
             <section className="todo">
-                <br/><br/>
-                <form className="todo-form form-inline" onSubmit={handleSubmit}>
-                    {alert.show && <Alert {...alert} removeAlert={showAlert} todo={todo} />}
-                    <h4>TODO LIST</h4>
+                <h4>TODO LIST</h4>
+                <div className="">
+                        {alert.show && <Alert {...alert} removeAlert={showAlert} todo={todo} />}
+                    </div>
+                <form className="todo-form form-inline form-center" onSubmit={handleSubmit}>
+                    
                     <div className="form-group">
                     <input className="form-control" type="text" placeholder="Add todo..." value={name} onChange={(e) => setName(e.target.value)} />
                     </div>
-                    <button type="submit">{edit ? 'Edit' : 'Add'}</button>
+                    <button className="submit" type="submit">{edit ? 'Edit' : 'Add'}</button>
                 </form>
                 {todo.length > 0 && (
-                <div className="todo-container">
+                <div className="">
                     <List
                         todos={todo}
                         removeTodo={removeTodo}
                         editTodo={editTodo}
                     />
-                    <button className="clear" onClick={clearTodo}>Clear Todos</button>
+                    <div className="clear-btn">
+                        <button onClick={clearTodo}>Clear Todos</button>
+                    </div>
                 </div>
                 )}
             </section>

@@ -5,9 +5,9 @@ import { navLinks } from './navData';
 
 export default function Navbar() {
     return (
-        <nav>
+        <nav className="nav">
                 <div className="nav-header">
-                    <h4>React Practice Projects</h4>
+                    <Link to="/"><h4>React Practice Projects</h4></Link>
                 </div>
                 <div className="links-container show-container">
                     <ul className="nav-links">
